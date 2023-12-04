@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="app.css" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Shopify Admin</title>
+	</head>
+	<body>
+		<!-- header start -->
+		<header>
+			<nav class="navbar">
+				<div>
+					<img
+						class="nav-logo"
+						style="width: 104.868px; height: 30px; margin-bottom: 2px"
+						src="https://crushingit.tech/hackathon-assets/shopify-icon-desktop.svg"
+						alt=""
+					/>
+					<img
+						class="nav-logo2"
+						style="width: 32px; height: 32px; margin-bottom: 2px"
+						src="https://crushingit.tech/hackathon-assets/shopify-icon.svg"
+						alt=""
+					/>
+				</div>
+				<div>
+					<img
+						class="nav-search_icon"
+						src="https://crushingit.tech/hackathon-assets/icon-search.svg"
+						alt=""
+					/>
+					<input class="nav-input" type="text" placeholder="Search" />
+				</div>
+				<div
+					class="right-side-nav"
+					style="
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						gap: 10px;
+					"
+				>
+					<button class="nav-notification">
+						<img
+							class="nav-notification_icon"
+							src="https://crushingit.tech/hackathon-assets/icon-bell.svg"
+							alt=""
+						/>
+					</button>
+					<!-- notification drop down will be toggled when the notification button is clicked -->
+					<div class="nav-notification-drop_down" style="display: none">
+						<div
+							class="nav-notification-drop_down-one"
+							style="
+								display: flex;
+								justify-content: space-between;
+								align-items: center;
+								align-self: stretch;
+							"
+						>
+							<div>
+								<span>Alerts</span>
+							</div>
+							<div class="alert-icons">
+								<img
+									class="alert-icon"
+									src="https://crushingit.tech/hackathon-assets/icon-filter.svg"
+									alt=""
+								/>
+								<img
+									class="alert-icon"
+									src="https://crushingit.tech/hackathon-assets/icon-check-empty-circle.svg"
+									alt=""
+								/>
+							</div>
+						</div>
+						<div class="nav-notification-drop_down-two">
+							<span>Alerts about your store and account will show here</span>
+						</div>
+					</div>
+					<button class="span-div">
+						<span class="span-one">Davii Collections</span>
+						<span class="span-two">DC</span>
+					</button>
+					<!-- menu will be toggled when the span-div is clicked -->
+					<div class="span-div-modal" style="display: none">
+						<!-- section one of the profile modal -->
+						<div class="first-profile-modal">
+							<div class="profile-modal">
+								<div>
+									<span class="span-two-modal">DC</span>
+									<span class="span-one-modal">Davii Collections</span>
+								</div>
+								<div>
+									<img src="./assets/svgs/modal-tick.svg" alt="" />
+								</div>
+							</div>
+							<div
+								class="marketplace hover"
+								style="
+									display: flex;
+									align-items: center;
+									font-size: 13px;
+									padding: 6px;
+								"
+							>
+								<img
+									style="
+										width: 20px;
+										height: 20px;
+										flex-shrink: 0;
+										margin-right: 7px;
+									"
+									src="https://crushingit.tech/hackathon-assets/icon-store.svg"
+									alt=""
+								/>
+								<span
+									style="
+										font-style: normal;
+										font-weight: 400;
+										line-height: 140%;
+										color: #303030;
+									"
+									>All stores</span
+								>
+							</div>
+						</div>
+						<hr
+							style="
+								width: 100%;
+								border-color: #e1e1e1;
+								border-style: solid;
+								height: 0.75px;
+							"
+						/>
+						<!-- section two of the profile modal -->
+						<div class="menu-options"></div>
+						<hr
+							style="
+								width: 100%;
+								border-color: #e1e1e1;
+								border-style: solid;
+								height: 0.75px;
+							"
+						/>
+						<div class="third-section-modal">
+							<div class="profile-name" style="padding-left: 6px">
+								<span
+									class="profile-span-one"
+									style="font-size: 13px; font-weight: 500"
+									>David Michael</span
+								>
+								<span
+									class="profile-span-one"
+									style="font-size: 12px; font-weight: 400"
+									>davidmichael@gmaill.com</span
+								>
+							</div>
+							<div
+								class="menu-end"
+								style="
+									display: flex;
+									flex-direction: column;
+									width: 100%;
+									gap: 13px;
+								"
+							>
+								<!-- section three of the profile modal -->
+
+								<span class="third-section-span hover" style="padding: 6px"
+									>Manage account</span
+								>
+								<span class="third-section-span hover" style="padding: 6px"
+									>Logout</span
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- header end -->
+
+		<!-- body start -->
+
+		<div class="heading-card">
+			<div class="right">
+				<h5>Extend your trial for $1/month for 3 months on select plans.</h5>
+
+				<button class="app-text-button btn-white">Select a plan</button>
+			</div>
+
+			<button class="app-icon-button transaparent close-btn">
+				<svg
+					width="16"
+					height="16"
+					viewBox="0 0 21 20"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M14.4697 15.0303C14.7626 15.3232 15.2374 15.3232 15.5303 15.0303C15.8232 14.7374 15.8232 14.2626 15.5303 13.9697L11.5607 10L15.5303 6.03033C15.8232 5.73744 15.8232 5.26256 15.5303 4.96967C15.2374 4.67678 14.7626 4.67678 14.4697 4.96967L10.5 8.93934L6.53033 4.96967C6.23744 4.67678 5.76256 4.67678 5.46967 4.96967C5.17678 5.26256 5.17678 5.73744 5.46967 6.03033L9.43934 10L5.46967 13.9697C5.17678 14.2626 5.17678 14.7374 5.46967 15.0303C5.76256 15.3232 6.23744 15.3232 6.53033 15.0303L10.5 11.0607L14.4697 15.0303Z"
+						fill="#ffff"
+					/>
+				</svg>
+			</button>
+		</div>
+		<section class="body">
+			<div class="main-card">
+				<div class="main-card-heading">
+					<div class="main-card-header">
+						<h3>Setup guide</h3>
+
+						<button class="app-icon-button arrow-btn arrow-btn-opened">
+							<svg
+								width="16"
+								height="16"
+								viewBox="0 0 21 20"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M6.21967 8.46967C6.51256 8.17678 6.98744 8.17678 7.28033 8.46967L10.75 11.9393L14.2197 8.46967C14.5126 8.17678 14.9874 8.17678 15.2803 8.46967C15.5732 8.76256 15.5732 9.23744 15.2803 9.53033L11.2803 13.5303C10.9874 13.8232 10.5126 13.8232 10.2197 13.5303L6.21967 9.53033C5.92678 9.23744 5.92678 8.76256 6.21967 8.46967Z"
+									fill="#303030"
+								/>
+							</svg>
+						</button>
+					</div>
+					<p>Use this personalized guide to get your store up and running.</p>
+					<div class="main-card-footer">
+						<p class="counter"></p>
+						<div class="progress"></div>
+					</div>
+				</div>
+
+				<div class="main-card-content"></div>
+			</div>
+		</section>
+
+		<!-- body end -->
+	</body>
+	<script src="app.js"></script>
+</html>
